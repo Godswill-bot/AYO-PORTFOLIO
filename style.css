@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #1c1c1c;
+  background-image:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(255, 255, 255, 0.1),
+      transparent 70%
+    ),
+    linear-gradient(160deg, rgba(255, 255, 255, 0.06), rgba(0, 0, 0, 0.25)),
+    url("https://www.transparenttextures.com/patterns/black-paper.png");
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.front {
+  width: 100%;
+  max-width: 1500px;
+  margin: 30px auto;
+  border: 1px solid grey;
+  border-radius: 8px;
+  padding: clamp(40px, 6vw, 80px) clamp(20px, 5vw, 70px)
+    clamp(80px, 12vw, 190px);
+}
+
+.text {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.text1 {
+  font-size: clamp(48px, 10vw, 120px);
+  font-weight: 400;
+  color: #dadadad4;
+}
+
+.year {
+  background-color: #f4430d;
+  padding: 8px 18px;
+  border-radius: 20px;
+  color: #000;
+  height: fit-content;
+  margin-top: 10px;
+}
+
+.text2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  color: #dadadad4;
+  margin-top: 20px;
+}
+
+/* ================= ABOUT BAR ================= */
+.about {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  font-size: 13px;
+  color: #dadadad4;
+}
+
+.about2 {
+  padding-top: 20px;
+}
+
+.right-side {
+  text-align: right;
+}
+
+/* ================= ABOUT ME ================= */
+.abt {
+  border: 1px solid grey;
+  border-radius: 8px;
+  margin: 30px;
+}
+
+.about-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about-me img {
+  width: 100%;
+  max-width: 320px;
+  padding: 20px;
+}
+
+.intro {
+  margin-top: 20px;
+}
+
+.hello {
+  font-size: clamp(50px, 8vw, 90px);
+}
+
+.intro p {
+  font-size: 13px;
+  color: #dadadad4;
+  line-height: 32px;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.links a {
+  background-color: #f4430d;
+  padding: 6px 20px;
+  border-radius: 10px;
+  font-size: 12px;
+  color: black;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.links a:hover {
+  background: transparent;
+  border: 1px solid #f4430d;
+  color: #f4430d;
+}
+
+.combined {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px;
+}
+
+.education,
+.soft,
+.second,
+.third-one,
+.third-two {
+  border: 1px solid grey;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.education {
+  max-width: 450px;
+}
+
+.education .one {
+  font-weight: bold;
+}
+
+.education .two,
+.education .four {
+  font-size: 11px;
+  color: #dadadad4;
+}
+
+.soft {
+  margin-top: 30px;
+}
+
+.sep {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.ri-one {
+  background: #fff;
+  color: #000;
+  height: 26px;
+  width: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.texting {
+  font-size: 13px;
+}
+
+.texting-two {
+  font-size: 11px;
+  color: #dadadad4;
+}
+
+.second {
+  max-width: 330px;
+}
+
+.exps {
+  margin-top: 15px;
+  line-height: 22px;
+}
+
+.exp-one {
+  font-size: 10px;
+  color: #dadadad4;
+}
+
+.exp-two {
+  font-size: 12px;
+}
+
+.exp-three {
+  font-size: 10px;
+  color: #dadadad4;
+}
+
+/*  
+.third {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.third-one,
+.third-two {
+  border: 1px solid grey;
+  border-radius: 8px;
+  padding: 20px;
+}
+.third-one,
+.third-two,
+.skiil {
+  font-size: 10px;
+  color: #dadadad4;
+}
+.skil,
+.skill {
+  
+  color: #fff;
+  font-size: 14px;
+} */
+.skil {
+  font-size: 15px;
+  color: #fff;
+}
+.skils {
+  font-size: 12px;
+  color: #dadadad4;
+}
+.third-two{
+  margin-top: 20px;
+}
+.skill {
+  font-size: 15px;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .intro p {
+    text-align: center;
+  }
+
+  .left-side,
+  .right-side {
+    text-align: center;
+  }
+
+  .right-side {
+    width: 100%;
+  }
+  .about {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+    padding: 20px 15px;
+    font-size: 14px;
+  }
+
+  .about2 {
+    padding-top: 0;
+  }
+
+  .right-side {
+    text-align: center;
+    width: 100%;
+  }
+  .hello {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .education {
+    margin-left: -20px;
+    width: 300px;
+  }
+  .soft {
+    margin-left: -20px;
+    width: 300px;
+  }
+  .second {
+    margin-left: -20px;
+    width: 300px;
+  }
+
+  .third {
+    margin-left: -20px;
+    width: 300px;
+    font-size: 12px;
+    font-weight: none;
+  }
+  .third-two {
+    margin-left: 1px;
+    margin-top: 20px;
+    width: 300px;
+  }
+}
+
+
+@media (max-width: 360px) {
+  .education {
+    margin-left: -20px;
+    width: 280px;
+  }
+  .soft {
+    margin-left: -20px;
+    width: 280px;
+  }
+  .second {
+    margin-left: -20px;
+    width: 280px;
+  }
+
+  .third {
+    margin-left: -20px;
+    width: 280px;
+    font-size: 12px;
+    font-weight: none;
+  }
+  .third-two {
+    margin-left: 1px;
+    margin-top: 20px;
+    width: 280px;
+  }
+}
