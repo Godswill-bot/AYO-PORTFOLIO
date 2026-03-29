@@ -11,7 +11,7 @@
     
     --font-main: 'Inter', system-ui, -apple-system, sans-serif;
     
-    --container-width: 1800px;
+    --container-width: 1400px;
     --font-cursive: 'Dancing Script', cursive;
     --transition-slow: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     --transition-fast: 0.2s ease;
@@ -86,9 +86,9 @@ img {
 
 /* Structural Utility */
 .container {
-    width: 100%;
-    max-width: none;
-    padding: 0 5%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 8%;
 }
 
 .section {
@@ -412,8 +412,10 @@ img {
 
 .profile-img {
     width: 100%;
-    max-width: 480px;
-    margin-left: max(20px, 8%);
+    max-width: 440px;
+    margin-left: auto;
+    margin-right: 0;
+    display: block;
     border-radius: 12px;
     object-fit: cover;
     filter: grayscale(100%);
@@ -636,7 +638,7 @@ img {
     .mt-mobile-2 { margin-top: 1rem; }
 
     .about-image { margin-top: 2rem !important; }
-    .profile-img { margin-left: 0; max-width: 100%; }
+    .profile-img { margin: 0 auto; max-width: 100%; }
 
     .scroll-down {
         position: relative;
@@ -674,7 +676,7 @@ img {
     .stat-item p { font-size: 0.65rem; }
     
     .section-heading { font-size: clamp(1.4rem, 7vw, 1.8rem); line-height: 1.25; }
-    .profile-img { width: 100%; height: auto; max-width: 100%; margin-left: 0; border-radius: 8px; object-fit: contain; }
+    .profile-img { width: 100%; height: auto; max-width: 100%; margin: 0 auto; border-radius: 8px; object-fit: contain; }
     .about-text p { font-size: 0.95rem; }
     
     .social-links { gap: 0.5rem; justify-content: flex-start; }
@@ -721,6 +723,10 @@ img {
 .cursive-text { font-family: var(--font-cursive); }
 .logo a { font-family: var(--font-cursive); font-size: 2.5rem; letter-spacing: 0; }
 .hero-subtitle .cursive-text { font-size: 1.5em; color: var(--accent); }
+
+
+
+
 
 
 
