@@ -121,7 +121,7 @@ img {
 
 .grid-2 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 4rem;
 }
 
@@ -623,8 +623,8 @@ img {
    Responsive Breakpoints
    ========================================================================== */
 @media (max-width: 900px) {
-    .grid-2 { grid-template-columns: 1fr; gap: 2rem; }
-    .grid-2-timeline { grid-template-columns: 1fr; gap: 1.5rem; padding: 1.5rem 0; }
+    .grid-2 { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
+    .grid-2-timeline { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; padding: 1.5rem 0; }
     .sticky-text, .sticky-container { position: static; margin-bottom: 1rem; }
     
     .hidden-mobile { display: none !important; }
@@ -646,7 +646,7 @@ img {
 }
 
 @media (max-width: 600px) {
-    .container { padding: 0 5vw; }
+    .container { padding: 0 24px !important; width: 100%; box-sizing: border-box; }
     .section { padding: 60px 0; }
     
     .hero { 
@@ -666,7 +666,7 @@ img {
     
     .hero-stats { 
         display: grid; 
-        grid-template-columns: 1fr 1fr; 
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); 
         gap: 1.25rem; 
     }
     .stat-item h2 { font-size: 1.6rem; margin-bottom: 0.2rem; }
@@ -704,6 +704,14 @@ img {
     from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+
+
+
+
+
+
+
 
 
 
