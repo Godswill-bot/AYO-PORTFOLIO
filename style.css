@@ -11,9 +11,7 @@
     
     --font-main: 'Inter', system-ui, -apple-system, sans-serif;
     
-    --container-width: 1200px;
-    --nav-height: 80px;
-    
+    --container-width: 1600px;
     --transition-slow: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     --transition-fast: 0.2s ease;
 }
